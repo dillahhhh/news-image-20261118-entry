@@ -454,3 +454,28 @@ Leaderboard 17 Nov: GET https://make.fun/api/competitions/news-image-20261117/le
 
 *— Akhir VERIFICATION.md — Fase 1 selesai. Lanjut: parent bawa konsep ke Ting,
 lalu builder terpisah build Opsi A (atau B bila Ting putuskan).*
+
+---
+
+## 9. ADDENDUM BUILD — verifikasi saat build (19 Nov ~05:24 WIB, parent)
+
+Dua klaim di gambar yang TIDAK ada di §3 (ditambahkan builder saat build, diverifikasi
+parent dari sumber primer sebelum check):
+
+1. **"A Houthi missile aimed at Riyadh was destroyed" (kalimat terakhir lead).**
+   BENAR, 18 Nov 2026 — koalisi pimpinan Saudi mencegat & menghancurkan rudal jelajah
+   Houthi ke arah Riyadh (Al Jazeera; MENAFN 18 Nov 08:28 GMT; QNA/Fana News 06:31 UTC;
+   dua rudal jelajah + dua drone dicegat hari itu; ledakan terdengar di Riyadh, AFP).
+   Klaim "Houthi merebut Bab el-Mandeb" (§3 F1) TIDAK dipakai — diganti klaim Riyadh
+   ini yang terverifikasi.
+2. **"Latin America at APEC: Mexico, Peru, Chile in Shenzhen" (brief ASIA).**
+   BENAR — APEC Shenzhen 18–19 Nov dihadiri ketiga negara Amerika Latin itu sebagai
+   satu-satunya anggota dari kawasan tersebut (Latin America Reports 17 Nov; AS/COA:
+   Presiden Sheinbaum, Fujimori, Kast hadir). Framing di gambar hanya menyebut
+   kehadiran di Shenzhen, tanpa klaim pertemuan spesifik.
+3. **Oil Brent −0,7% ke $92,53 / WTI −1,4% ke $84,77** — Reuters 18 Nov 0550 GMT.
+   **Como 9–1 Lens** terverifikasi tapi DIBUANG demi muat layout (briefs 11→10,
+   total 18→17 cerita; footer "17 STORIES" sudah benar).
+4. **Ting REVISI 05:17 WIB diterapkan semua** (hierarki 1+6+10; peta hanya lokasi
+   terkonfirmasi Kuwait/Bahrain/Qeshm; atribusi klaim; Nvidia "reported overnight";
+   uji 300px). Angka contoh Ting "4.0T" TIDAK dipakai — itu angka World Bank 17 Nov.
