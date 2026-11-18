@@ -295,9 +295,13 @@ def render_html_to_png(html_path, png_path):
         overflow = page.evaluate(
             "() => document.querySelector('.sheet').scrollHeight"
         )
+        tape = page.evaluate(
+            "() => { const t = document.querySelector('.tape');"
+            " return [t.scrollWidth, t.clientWidth]; }"
+        )
         page.screenshot(path=png_path)
         browser.close()
-    return overflow
+    return overflow, tape
 
 
 def save_within_limits(src_path, dst_path):
@@ -338,10 +342,18 @@ def main():
         fh.write(build_page(data))
     print("wrote %s" % html_path)
 
-    overflow = render_html_to_png(html_path, raw_png)
+    overflow, tape = render_html_to_png(html_path, raw_png)
     print("sheet scrollHeight: %s (page is %s)" % (overflow, PAGE_H))
     if overflow > PAGE_H:
         print("WARNING: content overflows the page by %s px" % (overflow - PAGE_H))
+    print("ticker scrollWidth: %s (tape clientWidth: %s)" % (tape[0], tape[1]))
+    if tape[0] > tape[1]:
+        print(
+            "ERROR: ticker text overflows the tape by %s px "
+            "(shorten the ticker, do not shrink fonts)" % (tape[0] - tape[1]),
+            file=sys.stderr,
+        )
+        return 1
 
     with Image.open(raw_png) as probe:
         print("raw render: %sx%s" % probe.size)
